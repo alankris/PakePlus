@@ -1,22 +1,10 @@
 {
     "$schema": "https://schema.tauri.app/config/2",
-    "productName": "PakePlus",
-    "version": "../package.json",
-    "identifier": "com.pakeplus.app",
-    "build": {
-        "beforeDevCommand": "pnpm dev",
-        "devUrl": "http://localhost:1420",
-        "beforeBuildCommand": "pnpm build",
-        "frontendDist": "../dist"
-    },
+    "productName": "ITassist",
+    "version": "0.0.1",
+    "identifier": "com.IT.app",
     "app": {
-        "windows": [
-            {
-                "title": "PakePlus",
-                "width": 920,
-                "height": 680
-            }
-        ],
+        "windows": [{"title":"ITassist","url":"http://10.70.19.176:8081/chat/GJKOKWzcQEPX4l5u","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1","width":430,"height":932,"theme":null,"resizable":true,"fullscreen":false,"maximized":false,"minWidth":400,"minHeight":300,"maxWidth":1920,"maxHeight":1080,"decorations":true,"transparent":false,"titleBarStyle":"Visible","visible":true,"focus":true,"closable":true,"minimizable":true,"maximizable":true,"alwaysOnTop":false,"alwaysOnBottom":false,"center":false,"skipTaskbar":false,"tabbingIdentifier":null,"parent":null,"dragDropEnabled":true,"browserExtensionsEnabled":false,"devtools":true,"contentProtected":false,"hiddenTitle":false,"incognito":false,"proxyUrl":null,"useHttpsScheme":false,"zoomHotkeysEnabled":false,"acceptFirstMouse":false,"create":false}],
         "security": {
             "assetProtocol": {
                 "enable": true,
@@ -29,8 +17,7 @@
                 }
             },
             "csp": "default-src 'self' 'unsafe-inline' 'unsafe-eval' ipc: http://ipc.localhost; img-src 'self' asset: http://asset.localhost blob: data: http://asset.localhost; font-src 'self' asset: http//localhost data:;"
-        },
-        "withGlobalTauri": true
+        }
     },
     "bundle": {
         "active": true,
